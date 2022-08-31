@@ -81,3 +81,11 @@ for (let i = 0; i < nameLengths.length; i++) {
   sumNameLength = sumNameLength + nameLengths[i];
 }
 console.log(sumNameLength);
+
+// 7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times. (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
+
+function printWord (word,n){
+        const myWord=word;
+        console.log(myWord.repeat(n));
+}
+printWord("hello" , 3);   
