@@ -89,3 +89,10 @@ function printWord (word,n){
         console.log(myWord.repeat(n));
 }
 printWord("hello" , 3);   
+
+// 8.	Write a function that takes two parameters, firstName and lastName, and returns a full name (the full name should be the first and the last name separated by a space).
+function printFullName(firstName,lastName){
+    console.log(firstName+ " "+ lastName);
+}
+
+printFullName("Mesay","Beyene");
