@@ -49,9 +49,14 @@ for (let i = 1; i < names.length; i++) {
 console.log(strConcat);
 
 // 3.	How do you access the last element of any array?
-//Answer: The last element of the array is always the array length -1. For example in the names array the last element of the array is: 
+//The last element of the array is always the array length -1. For example in the names array the last element of the array is: 
 let lastElement = lastIndex = 0;
 lastIndex = names.length - 1;
 console.log(lastIndex);
 lastElement = names[lastIndex];
 console.log(lastElement);
+
+// 4.	How do you access the first element of any array?
+//The first element of the array is always the array[0]. For example in the names array the first element of the array is: 
+let firstElement = names[0];
+console.log(firstElement);
