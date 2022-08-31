@@ -73,3 +73,11 @@ for (let i = 1; i < names.length; i++) {
     nameLengths.push(strCount);
 }
 console.log(nameLengths);
+
+// 6.	Write a loop to iterate over the nameLengths array and calculate the sum of all the elements in the array. Print the result to the console.
+
+let sumNameLength = 0;
+for (let i = 0; i < nameLengths.length; i++) {
+  sumNameLength = sumNameLength + nameLengths[i];
+}
+console.log(sumNameLength);
