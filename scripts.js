@@ -23,6 +23,28 @@ let sum = avg = 0;
 for (let i =0;  i< ages.length; i++) {
     sum = sum +ages[i];  
 }
-avg = sum /arraySize ;
+avg = sum / arraySize ;
 console.log(avg);
+// 2.	Create an array called names that contains the following values: ‘Sam’, ‘Tommy’, ‘Tim’, ‘Sally’, 
+//          ‘Buck’, ‘Bob’.
+
+let names  = ["Sam","Tommy", "Tim", "Sally","Buck", "Bob"];
+// a.	Use a loop to iterate through the array and calculate the average number of letters per name. Print the
+//          result to the console.
+let namesString = sumString = avgString = 0;
+for (let i = 0; i < names.length; i++) {
+    namesString = names[i].length;
+    sumString = sumString + namesString;
+}
+avgString = sumString / (names.length -1)
+console.log(avgString);
+
+//  b.	Use a loop to iterate through the array again and concatenate all the names together, separated by 
+//          spaces, and print the result to the console.
+
+let strConcat = names[0];
+for (let i = 1; i < names.length; i++) {
+    strConcat = strConcat + ' ' + names[i]; 
+}
+console.log(strConcat);
 
