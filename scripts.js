@@ -60,3 +60,16 @@ console.log(lastElement);
 //The first element of the array is always the array[0]. For example in the names array the first element of the array is: 
 let firstElement = names[0];
 console.log(firstElement);
+
+// 5.	Create a new array called nameLengths. Write a loop to iterate over the previously created names array and add the length of each name to the nameLengths array.
+// For example:
+
+// namesArray = ["Kelly", "Sam", "Kate"] //given this array
+// nameLengths = [5, 3, 4] //create this new array
+let nameLengths = [];
+for (let i = 1; i < names.length; i++) {
+    let strCount = names[i].length;
+    console.log(strCount);
+    nameLengths.push(strCount);
+}
+console.log(nameLengths);
