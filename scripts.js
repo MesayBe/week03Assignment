@@ -153,7 +153,7 @@ console.log( compareTwoAvg(arr1,arr2));
 // 12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 
 function willBuyDrink(isHotOutside , moneyInPocket){
- if(isHotOutside = true){
+ if(isHotOutside === true){
     if(moneyInPocket > 10.50){
         return true;
     }
@@ -164,3 +164,18 @@ function willBuyDrink(isHotOutside , moneyInPocket){
 }
 
 console.log(willBuyDrink(true,11));
+
+// 13.	Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+// The following function is used to order coffee if is morning break and never had ond before.
+function orderCoffee (neverHadOneBefore, morningBreak){
+    if (neverHadOneBefore === true){
+        if(morningBreak === true){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+}
+
+console.log(orderCoffee(true,true));
