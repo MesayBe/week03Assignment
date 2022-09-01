@@ -36,7 +36,7 @@ for (let i = 0; i < names.length; i++) {
     namesString = names[i].length;
     sumString = sumString + namesString;
 }
-avgString = sumString / (names.length -1)
+avgString = sumString / (names.length)
 console.log(avgString);
 
 //  b.	Use a loop to iterate through the array again and concatenate all the names together, separated by 
@@ -100,7 +100,7 @@ printFullName("Mesay","Beyene");
 // 9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
 function checkArraySum (arr){
     let sumArray = 0;
-    for (let i = 0; i < nameLengths.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         sumArray = sumArray + arr[i];
     }  
     if (sumArray > 100) {
@@ -111,3 +111,18 @@ function checkArraySum (arr){
 }
 let arr = [10,7,15,22,17]
 console.log(checkArraySum(arr));
+
+// 10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
+function calcAvg (arr){
+    let sumArray2 =  avgArr = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sumArray2 = sumArray2 + arr[i];
+    }  
+    avgArr = sumArray2 / (arr.length)
+    console.log(arr.length);
+    console.log(sumArray2);
+    console.log(avgArr);
+}
+
+let newArr = [10,7,15,22,17]
+calcAvg(newArr);
