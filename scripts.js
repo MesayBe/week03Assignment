@@ -118,11 +118,34 @@ function calcAvg (arr){
     for (let i = 0; i < arr.length; i++) {
         sumArray2 = sumArray2 + arr[i];
     }  
-    avgArr = sumArray2 / (arr.length)
-    console.log(arr.length);
-    console.log(sumArray2);
+    avgArr = sumArray2 / (arr.length);
     console.log(avgArr);
 }
 
 let newArr = [10,7,15,22,17]
 calcAvg(newArr);
+
+// 11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+
+function compareTwoAvg (arrOne,arrTwo){
+    let sumOne = sumTwo = avgOne =  avgTwo = 0;
+    for (let i = 0; i < arrOne.length; i++) {
+        sumOne = sumOne + arrOne[i];
+    }  
+    for (let i = 0; i < arrTwo.length; i++) {
+        sumTwo = sumTwo + arrTwo[i];
+    }  
+    avgOne = sumOne / (arrOne.length);
+    avgTwo = sumTwo / (arrTwo.length);
+    
+    if (avgOne > avgTwo){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+ let arr1 = [10,7,15,22,17];
+ let arr2 = [15,23,12,18,9];
+console.log( compareTwoAvg(arr1,arr2));
