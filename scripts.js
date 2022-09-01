@@ -149,3 +149,18 @@ function compareTwoAvg (arrOne,arrTwo){
  let arr1 = [10,7,15,22,17];
  let arr2 = [15,23,12,18,9];
 console.log( compareTwoAvg(arr1,arr2));
+
+// 12.	Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+
+function willBuyDrink(isHotOutside , moneyInPocket){
+ if(isHotOutside = true){
+    if(moneyInPocket > 10.50){
+        return true;
+    }
+    else{
+        return false;
+    }
+ }
+}
+
+console.log(willBuyDrink(true,11));
