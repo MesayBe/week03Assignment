@@ -96,3 +96,18 @@ function printFullName(firstName,lastName){
 }
 
 printFullName("Mesay","Beyene");
+
+// 9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
+function checkArraySum (arr){
+    let sumArray = 0;
+    for (let i = 0; i < nameLengths.length; i++) {
+        sumArray = sumArray + arr[i];
+    }  
+    if (sumArray > 100) {
+        return true;
+    }else{
+        return false;
+    }
+}
+let arr = [10,7,15,22,17]
+console.log(checkArraySum(arr));
